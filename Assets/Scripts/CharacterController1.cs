@@ -5,28 +5,29 @@ using UnityEngine.UI;
 
 public class CharacterController1 : MonoBehaviour
 {
-    public Vector3 jumpVector;
+
     public float lookScale = 1;
     public float movementForce = 0.005f;
     private Rigidbody rigidBody;
 
     public bool trackMouse = true;
 
-    
-    
-
-    // Use this for initialization
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+
     }
 
-    // Update is called once per frame
     void Update()
     {
 
         rigidBody.AddForce(transform.forward * movementForce * Input.GetAxis("Vertical"), ForceMode.Impulse);
         rigidBody.AddForce(transform.right * movementForce * Input.GetAxis("Horizontal"), ForceMode.Impulse);
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            rigidBody.AddForce(Vector3.up * 10, ForceMode.Impulse);
+        }
 
         var playerRoatation = transform.localEulerAngles;
 
@@ -64,9 +65,8 @@ public class CharacterController1 : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GetComponent<Rigidbody>().AddForce(jumpVector, ForceMode.VelocityChange);
-        }
+      
+
+
     }
 }

@@ -1,0 +1,59 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.179037358)
+
+newmtl Handle
+kd 0.54 0.1163 0.0529
+illum 1
+
+newmtl Cylinder
+kd 1 0 0.1484
+illum 1
+
+newmtl Barrle
+kd 1 0.3561 0
+illum 1
+
+newmtl Trigger_guard
+kd 0.9338 0.8167 0.0731
+illum 1
+
+newmtl Lever
+kd 0.6631 0.052 0.6199
+illum 1
+
+newmtl Upper_Rail
+kd 1 0 0.7871
+illum 1
+
+newmtl Grenade_launcher
+kd 0.0485 0.4343 0.6193
+illum 1
+
+newmtl Bottom_Rail
+kd 0 0.1388 1
+illum 1
+
+newmtl trigger1
+kd 0.2129 0.4709 0.0923
+illum 1
+
+newmtl Mag
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Bullet
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Grenade
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Projector
+kd 0.5 0.5 0.5
+illum 1
+
+newmtl Grip
+kd 0.5 0.5 0.5
+illum 1
+
